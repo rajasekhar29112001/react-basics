@@ -9,19 +9,19 @@ const UseRef = () => {
     const inputRef = useRef(null);
 
     function changeCount(){
-        setCount(count => count + 1)
-        console.log("state value",count)
+        setCount(count + 1)
     }
+    console.log("state value",count)
 
-    useEffect(() => {
-        console.log("ref count ++")
-    })
+    // useEffect(() => {
+    //     console.log("ref count ++")
+    // })
 
     function changeRefCount(){
         ref.current++;
         console.log("ref value",ref)
     }
-
+    
     function inputRefValue(){
         inputRef.current.focus();
         inputRef.current.style.backgroundColor="yellow";

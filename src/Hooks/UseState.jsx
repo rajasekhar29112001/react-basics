@@ -2,8 +2,14 @@ import React, { useState } from "react";
 
 const UseState = () => {
 
-    let surName = "venu";
-    surName = "gopal"
+    var surName = "venu";   
+
+    function nameChange(){
+        surName = "gopal";
+        setName("sekhar")
+    }
+    console.log(surName)
+
     const [name,setName] = useState("raja");
     const [age,setAge] = useState(23);
     const [obj,setObj] = useState({village:"mdp",pin:533308});
@@ -13,7 +19,7 @@ const UseState = () => {
         <>
             <div class="box"> 
                 <h3>SurName: {surName}</h3> 
-            
+                <button type="button" onClick={nameChange}>surname</button>
                 <h2>Name: {name}</h2> 
                 <button type="button" onClick={() => {setName("sekhar")}}>Name</button> 
                 <h2>Age: {age}</h2>
