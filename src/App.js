@@ -1,4 +1,5 @@
 import './App.css';
+import Head from './FormCRUD/Head';
 // import UseState1 from './Hooks/UseState1';
 // import MouseOverList from './EventListener/MouseOverList';
 // import OnclickEventList from './EventListener/OnclickEventList';
@@ -40,6 +41,7 @@ function App() {
       {/* <Splice/> */}
       {/* <PropSend/> */}
        {/* <UseState/>  */}
+       {/* <UseState1/> */}
       {/* <UseEffect/> */}
       {/* <UseRef/> */}
       {/* <UseReducer/> */}
@@ -56,7 +58,7 @@ function App() {
       {/* <KeyPress/> */}
       {/* <OnclickEventList/> */}
       {/* <MouseOverList/> */}
-      {/* <UseState1/> */}
+      <Head/>
     </>
   );
 }
